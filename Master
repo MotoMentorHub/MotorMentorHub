@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoMentorHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #ff5733;
+        }
+
+        nav {
+            background-color: #ff5733;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Specific Styles */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 5px solid #ff5733;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            color: #333;
+        }
+
+        .leaderboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .leaderboard-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .leaderboard-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .leaderboard-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile img {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MotoMentorHub</h1>
+        <p>Your Ultimate Motorcycle Mentorship Platform</p>
+    </header>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Find a Mentor</a> |
+        <a href="#">Leaderboard</a> |
+        <a href="#">Profile</a>
+    </nav>
+    <section>
+        <div class="container">
+            <h2>Find a Mentor Near You</h2>
+            <p>Connect with experienced riders in your area who are passionate about mentoring.</p>
+            <!-- Add form for searching mentors by area -->
+            <h2>Top Mentors</h2>
+            <div class="leaderboard">
+                <div class="leaderboard-card">
+                    <img src="mentor1.jpg" alt="Mentor 1">
+                    <h3>John Doe</h3>
+                    <p>Total KMs: 1000</p>
+                </div>
+                <div class="leaderboard-card">
+                    <img src="mentor2.jpg" alt="Mentor 2">
+                    <h3>Jane Smith</h3>
+                    <p>Total KMs: 800</p>
+                </div>
+                <!-- Add more leaderboard cards as needed -->
+            </div>
+            <h2>Your Profile</h2>
+            <div class="profile">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <div class="profile-info">
+                    <h3>Username: JohnDoe</h3>
+                    <p>Location: City, Country</p>
+                    <p>Total KMs: 500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MotoMentorHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
